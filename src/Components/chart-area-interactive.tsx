@@ -55,13 +55,13 @@ const generateAPYTrendData = (pools: PoolData[] = []) => {
   
   return months.slice(Math.max(0, currentMonth - 11), currentMonth + 1).map((month) => {
     const baseAPY = pools.length > 0 ? parseFloat(pools[0]?.apy || '0') : 15;
-    const variation = (Math.random() - 0.5) * 10; // ±5% variation
+    const variation = (Math.random() - 0.5) * 10; 
     const currentAPY = Math.max(0, baseAPY + variation);
     
     return {
       date: month,
       apy: Math.round(currentAPY * 100) / 100,
-      tvl: pools.length > 0 ? parseFloat(pools[0]?.tvlUsd || '0') / 1000000 : 100, // Convert to millions
+      tvl: pools.length > 0 ? parseFloat(pools[0]?.tvlUsd || '0') / 1000000 : 100, 
     };
   });
 };

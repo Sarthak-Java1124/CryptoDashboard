@@ -37,7 +37,7 @@ export function SiteHeader({ title = "Documents", showBackButton = false, backHr
         <div className="ml-auto flex items-center gap-2">
           <Button variant="ghost" asChild size="sm" className="hidden sm:flex">
             <a
-              href="https://github.com/Sarthak-Java1124"
+              href=""
               rel="noopener noreferrer"
               target="_blank"
               className="dark:text-foreground"
